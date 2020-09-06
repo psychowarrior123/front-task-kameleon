@@ -1,0 +1,67 @@
+div {
+    padding: 10px;
+    margin: 10px 5px 0 5px;
+}
+.header {
+    grid-area: header;
+    height: 100px;
+    background-color: #17a2b8;
+    opacity: 0.5;
+}
+.nav {
+    grid-area: nav;
+    padding: 0 0 0 10px;
+}
+.sidebar {
+    grid-area: sidebar;
+    height: 700px;
+}
+.content {
+    grid-area: content;
+}
+.viewed {
+    grid-area: viewed;
+}
+.bought {
+    grid-area: bought;
+    height: auto;
+}
+.footer {
+    grid-area: footer;
+    height: 100px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "nav nav viewed"
+        "sidebar content viewed"
+        "bought bought bought"
+        "footer footer footer";
+    width: 100%;
+}
+aside {
+    background-color: #6c757d;
+    text-align: center;
+}
+.bought aside {
+    text-align: left;
+    padding-left: 10px;
+}
+.bought article {
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+.form-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
