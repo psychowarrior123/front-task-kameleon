@@ -65,5 +65,5 @@ guessSubmit.addEventListener('click', () => {
     guessCount++;
     guessField.value = '';
     guessField.focus();
-    console.log(guessCount)
+
 });
